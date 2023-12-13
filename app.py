@@ -4,16 +4,16 @@ from PIL import Image
 import numpy as np
 
 # set title
-st.title('Pneumonia classification')
+st.title('Diagnosis Based on X-Ray Photos')
 
 # set header
-st.header('Please upload a chest X-ray image')
+st.header('Upload an X-ray image')
 
 # upload file
 file = st.file_uploader('', type=['jpeg', 'jpg', 'png'])
 
 # load classifier
-model = load_model('./model/pneumonia_classifier.h5')
+model = load_model('./model/keras_model.h5')
 
 # load class names
 with open('./model/labels.txt', 'r') as f:
