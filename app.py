@@ -5,10 +5,9 @@ import numpy as np
 
 # Function to classify the image
 def classify(image, model, class_names):
-    # Preprocess the image (adjust as per your model's requirement)
-    image = image.resize((224, 224))  # Example size, change as needed
+    image = image.resize((224, 224))
     image_array = np.array(image)
-    image_array = image_array / 255.0  # Normalize if your model expects this
+    image_array = image_array / 255.0
     image_array = np.expand_dims(image_array, axis=0)
 
     # Make prediction
