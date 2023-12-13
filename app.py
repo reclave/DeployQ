@@ -48,4 +48,4 @@ if file is not None:
 
     # write classification
     st.write("## {}".format(class_name))
-    st.write("### score: {}%".format(int(conf_score * 1000) / 10))
+    st.write("### Confidence Score: {}%".format(int(conf_score * 1000) / 10))
